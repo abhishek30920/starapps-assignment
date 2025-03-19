@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <div class="loader-container">
+                <img src="./images/loader_icon.svg" alt="Loading" class="loader">
+            </div>
+            <img src="./images/Blue umbrella.png" alt="Umbrella" id="umbrella-image">
+            <div class="logo-container">
+                <img src="" " id="logo-image">
+            </div>
+        </div>
+        <div class="product-controls">
+            <h1>Custom Umbrella</h1>
+            <p class="description">Customize your umbrella with our easy-to-use design tool. Choose from multiple colors and add your logo for a perfect corporate gift.</p>
+            
+            <div class="color-options">
+                <h3>Customize your umbrella</h3>
+                <div class="color-swatches">
+                    <button class="color-swatch blue active" data-color="blue" data-image="./images/Blue umbrella.png"></button>
+                    <button class="color-swatch pink" data-color="pink" data-image="./images/Pink umbrella.png"></button>
+                    <button class="color-swatch yellow" data-color="yellow" data-image="./images/Yello umbrella.png"></button>
+                </div>
+            </div>
+            
+            <div class="upload-section">
+                <h3>UPLOAD LOGO</h3>
+                <div class="upload-box">
+                    <div class="upload-icon">
+                        <img src="./images/upload_icon.svg" alt="Upload Icon">
+                    </div>
+                    <p class="upload-text">
+                        <span class="upload-prompt">UPLOAD A FILE</span>
+                        <span class="upload-info">or drag and drop</span>
+                        <span class="file-types">PNG, JPG, SVG</span>
+                    </p>
+                    <input type="file" id="logo-upload" accept=".png,.jpg,.jpeg,.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
