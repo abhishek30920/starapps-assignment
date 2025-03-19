@@ -78,6 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please select an image file (PNG, JPG, or SVG)');
             return;
         }
+        if (!isFileSizeValid(file)) {
+            return;
+        }
+        if(!file.type.size)
         fileNameDisplay.textContent = file.name;
         loaderContainer.style.opacity = '1';
         loaderContainer.style.visibility = 'visible';
@@ -102,3 +106,14 @@ document.addEventListener('DOMContentLoaded', function() {
 logoUpload.removeEventListener('change', handleFileUpload);
 logoUpload.addEventListener('change', handleFileUpload);
 });
+
+function isFileSizeValid(file) {
+    const maxSizeInBytes = 5 * 1024 * 1024; // 5MB
+    
+    if (file.size > maxSizeInBytes) {
+        alert('File size exceeds 5MB limit. Please select a smaller file.');
+        return false;
+    }
+    
+    return true;
+}
