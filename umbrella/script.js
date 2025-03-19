@@ -42,15 +42,18 @@ document.addEventListener('DOMContentLoaded', function() {
           document.querySelector('.upload-icon').style.color="fffed0"
           uploadIcon.style.filter = 'invert(85%) sepia(39%) saturate(396%) hue-rotate(354deg) brightness(101%) contrast(96%)';
           document.querySelector('.loader-container').style.backgroundColor="#fffed0"
+          document.querySelector('.loader').style.filter='invert(85%) sepia(39%) saturate(396%) hue-rotate(354deg) brightness(101%) contrast(96%)';
         }else if(this.dataset.color=='pink'){
           document.body.style.backgroundColor='#ffcffb'
           uploadIcon.style.filter = 'invert(72%) sepia(46%) saturate(2352%) hue-rotate(283deg) brightness(102%) contrast(101%)';
-             document.querySelector('.loader-container').style.backgroundColor="#ffcffb"
+          document.querySelector('.loader-container').style.backgroundColor="#ffcffb"
+          document.querySelector('.loader').style.filter='invert(72%) sepia(46%) saturate(2352%) hue-rotate(283deg) brightness(102%) contrast(101%)';
         }else{
           document.body.style.backgroundColor="#abe0f3"
           uploadIcon.style.filter = 'invert(45%) sepia(77%) saturate(1642%) hue-rotate(165deg) brightness(96%) contrast(101%)';
 
             document.querySelector('.loader-container').style.backgroundColor="#abe0f3"
+            document.querySelector('.loader').style.filter='invert(45%) sepia(77%) saturate(1642%) hue-rotate(165deg) brightness(96%) contrast(101%)';
         }
           umbrellaImage.style.opacity = '0';
           
